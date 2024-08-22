@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head> 
+
+  <body>
+    <section>
+        <div class="circle"></div>
+        <header>
+
+       
+   <a href='#'>
+       <img class="logo" src="logo-removebg-preview.png">
+   </a>
+   <nav>
+   <ul>
+       <li><a href="#">HOME</a></li>
+       <li><a href="#">MENU</a></li>
+       <li><a href="#">NEW VARIETY'S</a></li>
+       <li><a href="#">CONTACT</a></li>
+   </ul>
+</nav>
+</header>
+
+<div class="content">
+<div class="textBox">
+    <h2 class="con1">Welcome to <br><span>'The Rhythm's Cadence'</span></h2>
+    <p>"Come, let us have some tea and continue to talk about happy things." You can’t buy happiness, but you can buy tea, and that’s kind of the same thing. At The Tea Haven, tea time is a chance to slow down, pull back, and appreciate our surroundings. So, take a seat, and let us pour you a cup of tranquility.
+
+        Feel free to adjust the name and details to better fit your tea shop!</p>
+   <a href="#">Learn More</a>
+</div>
+<div class="imgBox">
+    <img src="Green-Tea-removebg-preview.png" class="coffes">
+</div>
+</div>
+
+<ul class="thumb">
+<li><img src="Green-Tea-removebg-preview.png" onclick="imgSlider('Green-Tea-removebg-preview.png');changecircleColor('#51892b')"></li>
+<li><img src="White-Tea-removebg-preview.png"onclick="imgSlider('White-Tea-removebg-preview.png');changecircleColor('#a5a5a5')"></li>
+<li><img src="lemontea-removebg-preview.png"onclick="imgSlider('lemontea-removebg-preview.png');changecircleColor('#c96014')"></li>
+</ul>
+<ul class="sci">
+   
+    <li><a href="#"><i class="fa-brands fa-facebook fa-beat-fade fa-2xl" style="color: #4e2b1f;"></i></a></li>
+  <li><a href="#"><i class="fa-brands fa-whatsapp fa-beat-fade fa-2xl" style="color:#4e2b1f;"></i></a></li> 
+  <li> <a href="#"><i class="fa-brands fa-twitter fa-beat-fade fa-2xl" style="color: #4e2b1f;"></i></a></li> 
+</ul>
+
+</section>
+
+<script>
+    function imgSlider(anything){
+        document.querySelector('.coffes').src=anything
+    }
+    function changecircleColor(color){
+        const circle=document.querySelector('.circle')
+        circle.style.background=color
+    }
+</script>
+  </body>
+  
+</html>
